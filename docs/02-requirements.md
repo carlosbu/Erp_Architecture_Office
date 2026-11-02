@@ -1,6 +1,6 @@
 # 02 — Requirements (MVP)
 
-Status: **draft for owner review**
+Status: **approved by owner (02/11/2026)**
 Based on: `01-vision.md`, `reference/project-baseline.md`
 
 ## Glossary
@@ -47,14 +47,21 @@ Based on: `01-vision.md`, `reference/project-baseline.md`
   show whether it is covered by a current quote, excluded, or missing.
   - Example: Ar-condicionado shows "missing" until a quote covers it.
 - **B7** Price sanity: when a line has a quantity and unit (m², m, un), show the
-  unit price and compare with other quotes and with a reference price I enter.
+  unit price and compare with other quotes and with a reference price.
+  Reference prices come from public tables imported by the system (SINAPI
+  São Paulo — Caixa/IBGE, monthly; CUB/m² — Sinduscon-SP) plus prices the
+  owner enters manually; the source and date of each reference are shown.
   Flag lines > X% above the reference (X configurable, default 20%).
 - **B8** Approve a quote version → it becomes a commitment (value, terms,
   rooms/categories). Rejected/declined quotes stay archived.
 
 ## Epic C — Financial control (Controle Financeiro)
-- **C1** Set budget per room and per category; totals must reconcile with the
-  project budget (show unallocated amount).
+- **C1** Set budget per package, room and category; totals must reconcile with
+  the project budget (show unallocated amount).
+- **C1a** Suggested budget: the system proposes a split of R$ 500k per package
+  and room, based on received quotes, reference prices and typical shares of
+  a high-end apartment renovation. The owner can accept, edit, or reset it.
+  When quotes already exceed the budget, the suggestion shows where to cut.
 - **C2** Dashboard per room: budgeted, quoted (min/max), committed, paid,
   remaining, and % over/under.
   - Example: Cozinha budget R$ X vs. Todeschini range R$ 150–180k.
@@ -74,8 +81,9 @@ Based on: `01-vision.md`, `reference/project-baseline.md`
 - **D4** Timeline view (simple Gantt/list by week) readable on phone.
 
 ## Epic E — Access and usability
-- **E1** Login for owner and family (2–4 users), same data. Roles: owner (edit
-  all), member (view + comment; edit configurable).
+- **E1** Login for owner and family (2–4 users), same data. All family members
+  can edit. Roles: owner (also manages users and deletes projects) and editor.
+  Every change records who and when (audit trail).
 - **E2** UI in pt-BR, R$ format `R$ 1.234,56`, dates DD/MM/AAAA, works on phone.
 - **E3** Export dashboard and comparisons to PDF/Excel.
 - **E4** Data backed up daily.
@@ -92,9 +100,8 @@ Based on: `01-vision.md`, `reference/project-baseline.md`
 - Privacy: data visible only to logged-in users.
 - Every money value stored in cents (integer) to avoid rounding errors.
 
-## Open questions for owner
-1. Should we pre-load the two received quotes as sample data? (recommended)
-2. How should family members act: view only, or also edit?
-3. Do you already have a per-room budget split, or should the system suggest one?
-4. Reference prices: will you enter them, or should we research typical São
-   Paulo prices (e.g. SINAPI) later?
+## Decisions (owner, 02/11/2026)
+1. Pre-load the two received quotes as initial data: **yes**.
+2. Family members: **can edit**.
+3. Per-room budget: **system suggests** (C1a).
+4. Reference prices: **system researches** (SINAPI/CUB, B7).
