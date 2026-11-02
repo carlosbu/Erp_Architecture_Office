@@ -7,6 +7,9 @@ Based on: `01-vision.md`, `reference/project-baseline.md`
 - **Project**: one renovation/job (first: Apto Viveiro). Future ERP client job.
 - **Room**: a space of the project (Cozinha, Suíte 1...). Plus "Geral".
 - **Category**: type of work (Elétrica, Marcenaria...).
+- **Package**: a scope bought from one supplier (Obra civil, Marcenaria,
+  Ar-condicionado...). Quotes in the **same package compete**; different
+  packages **add up**.
 - **Supplier**: company or professional quoting/doing work.
 - **Quote**: a supplier's price proposal. Has **versions** (v1, v2...).
 - **Quote line**: one priced item of a quote; can be a fixed value or a min–max
@@ -24,10 +27,12 @@ Based on: `01-vision.md`, `reference/project-baseline.md`
   - Rooms from `project-baseline.md` are pre-loaded; I can edit/add.
   - An alias ("Banho Conjugado") maps to one or more rooms.
 - **A3** Categories are pre-loaded (list in baseline) and editable.
+- **A4** Packages are pre-loaded (list in baseline) and editable; each package
+  groups one or more categories.
 
 ## Epic B — Quote management (Gestão de Orçamentos)
 - **B1** Register a supplier (name, contact, category, notes).
-- **B2** Register a quote: supplier, date, version, validity, payment terms,
+- **B2** Register a quote for a **package**: supplier, date, version, validity, payment terms,
   tax rule (e.g. "+12% com NF"), execution time, attached PDF.
 - **B3** Add quote lines: description, category, fixed value **or** min–max,
   included/excluded, labor-only flag, room allocation (one room, several rooms
@@ -36,7 +41,7 @@ Based on: `01-vision.md`, `reference/project-baseline.md`
 - **B4** New version of a quote: copy v1 to v2, edit, and see differences
   (lines added/removed/changed, total delta).
   - Only one version per quote can be "current".
-- **B5** Compare quotes side by side for the same scope (by category or room):
+- **B5** Compare competing quotes **of the same package** side by side (by category or room):
   totals, per-line values, included vs. excluded, terms, with/without tax.
 - **B6** Completeness check: for each room × category in the project scope,
   show whether it is covered by a current quote, excluded, or missing.
@@ -53,8 +58,9 @@ Based on: `01-vision.md`, `reference/project-baseline.md`
 - **C2** Dashboard per room: budgeted, quoted (min/max), committed, paid,
   remaining, and % over/under.
   - Example: Cozinha budget R$ X vs. Todeschini range R$ 150–180k.
-- **C3** Overall forecast: committed + best current quotes + estimates for
-  missing scope vs. R$ 500k, with a clear over/under indicator.
+- **C3** Overall forecast = sum over packages of (committed value, else chosen
+  current quote, else manual estimate) vs. R$ 500k, with over/under indicator
+  and a list of packages still without any quote.
 - **C4** Payment schedule from terms (e.g. 20% + 5×), editable.
 - **C5** Record payment: date, amount, commitment, method, receipt file.
   Paid cannot exceed committed without explicit confirmation.

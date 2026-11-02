@@ -36,6 +36,23 @@ Architect: Carlos Sawaya Bracher Arquitetos Associados — anteprojeto R00, May 
 Note: suppliers name rooms differently (e.g. "Banho Conjugado" = Banho 2 + 3,
 "Sala Living" = Estar + Jantar, "Gourmet" = Varanda). The system needs aliases.
 
+## Scope packages (pacotes de contratação)
+The renovation is bought in separate packages. Quotes are **compared only
+within the same package**; the forecast **adds packages together**.
+| Package | Status |
+|---|---|
+| Obra civil | Noventa Graus v1 received |
+| Marcenaria | Todeschini estimate received |
+| Ar-condicionado | missing |
+| Mármores e granitos | missing |
+| Vidros, box e espelhos | missing |
+| Louças, metais e acessórios | missing |
+| Iluminação (peças) | missing |
+| Aquecimento de água | missing |
+| Limpeza final | missing |
+Noventa Graus and Todeschini are **complementary** (civil vs. joinery), not
+competing quotes. Each still needs competing quotes to compare prices.
+
 ## Work categories (from quotes)
 Serviços preliminares/demolição · Alvenaria · Elétrica · Hidráulica ·
 Ar-condicionado · Revestimento de parede · Impermeabilização · Piso ·
