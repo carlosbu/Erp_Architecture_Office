@@ -1,5 +1,5 @@
 # ADR-0001 — Tech stack: Next.js + Supabase + Vercel
-Status: proposed · Date: 02/11/2026
+Status: accepted (03/11/2026) · Date: 02/11/2026
 ## Context
 First system of a non-developer owner; phone-friendly web app; 2–4 users; low cost; built with Claude.
 ## Decision

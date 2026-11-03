@@ -7,6 +7,9 @@ Based on: `01-vision.md`, `reference/project-baseline.md`
 - **Project**: one renovation/job (first: Apto Viveiro). Future ERP client job.
 - **Room**: a space of the project (Cozinha, Suíte 1...). Plus "Geral".
 - **Category**: type of work (Elétrica, Marcenaria...).
+- **Scope item**: a coded item of the architect's project (e.g. MC01–MC27 of
+  the joinery schedule) with room(s), description and dimensions. It is the
+  common key to compare suppliers item by item.
 - **Package**: a scope bought from one supplier (Obra civil, Marcenaria,
   Ar-condicionado...). Quotes in the **same package compete**; different
   packages **add up**.
@@ -27,22 +30,35 @@ Based on: `01-vision.md`, `reference/project-baseline.md`
   - Rooms from `project-baseline.md` are pre-loaded; I can edit/add.
   - An alias ("Banho Conjugado") maps to one or more rooms.
 - **A3** Categories are pre-loaded (list in baseline) and editable.
+- **A5** Scope items: register coded project items (code, description, room
+  per the architect's plan, package, dimensions L×A×P, material). MC01–MC27
+  pre-loaded from the layout plan.
+  - Room comes from the plan, never from the supplier's text (suppliers swap
+    Suíte 2/3 names).
 - **A4** Packages are pre-loaded (list in baseline) and editable; each package
   groups one or more categories.
 
 ## Epic B — Quote management (Gestão de Orçamentos)
 - **B1** Register a supplier (name, contact, category, notes).
-- **B2** Register a quote for a **package**: supplier, date, version, validity, payment terms,
+- **B2** Register a quote for a **package**: supplier, date, version, validity
+  (warn when expired), payment terms,
   tax rule (e.g. "+12% com NF"), execution time, attached PDF.
 - **B3** Add quote lines: description, category, fixed value **or** min–max,
   included/excluded, labor-only flag, room allocation (one room, several rooms
   with % split, or Geral).
   - A line marked EXCLUDED has no value and is listed as a gap.
+- **B3a** A quote line can reference a scope item (e.g. MC06); then its room
+  allocation is taken from the item automatically. Lines without a code
+  (e.g. "3 portas de correr Sala TV") are allowed as extras with manual rooms.
+  A line can also be marked ELIMINATED (e.g. Fazenda MC21).
 - **B4** New version of a quote: copy v1 to v2, edit, and see differences
   (lines added/removed/changed, total delta).
   - Only one version per quote can be "current".
 - **B5** Compare competing quotes **of the same package** side by side (by category or room):
   totals, per-line values, included vs. excluded, terms, with/without tax.
+- **B5a** Item-by-item comparison for a package with scope items: one row per
+  scope item, one column per supplier, showing value, ratio to cheapest,
+  and "not quoted / excluded / eliminated"; extras listed below.
 - **B6** Completeness check: for each room × category in the project scope,
   show whether it is covered by a current quote, excluded, or missing.
   - Example: Ar-condicionado shows "missing" until a quote covers it.
@@ -91,7 +107,6 @@ Based on: `01-vision.md`, `reference/project-baseline.md`
 ## Later (not MVP)
 - Measurement take-off from plans/DWG (areas, perimeters → quantities).
 - Auto-import of quotes from PDF using AI.
-- Joinery schedule (MC01–MC27) linked to joinery quote lines.
 - Photos per room; diary of works.
 - Office ERP: clients, proposals, timesheets, billing.
 
@@ -105,3 +120,4 @@ Based on: `01-vision.md`, `reference/project-baseline.md`
 2. Family members: **can edit**.
 3. Per-room budget: **system suggests** (C1a).
 4. Reference prices: **system researches** (SINAPI/CUB, B7).
+5. Scope items MC01–MC27 in the MVP as the joinery comparison key: **yes** (03/11/2026).

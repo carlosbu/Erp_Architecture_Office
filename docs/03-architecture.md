@@ -1,6 +1,6 @@
 # 03 — Architecture
 
-Status: **draft for owner review**
+Status: **approved by owner (03/11/2026)**
 
 ## In one sentence
 A web app that runs in the browser (phone or computer), stores data in a
@@ -45,12 +45,14 @@ Organization ─┬─ User (role: owner | editor)
                    ├─ Room (code, name, area m², aliases)
                    ├─ Package (Obra civil, Marcenaria, ...) ─ Category (many)
                    ├─ BudgetLine (package, room?, category?, amount, suggested?)
+                   ├─ ScopeItem (code MC01..., description, room(s),
+                   │    package, dimensions, material)
                    ├─ Supplier
                    ├─ Quote (package, supplier, status)
                    │    └─ QuoteVersion (v1, v2, date, terms, tax %, current?)
-                   │         └─ QuoteLine (category, description, qty, unit,
+                   │         └─ QuoteLine (scope item?, category, description, qty, unit,
                    │              unit price, value | min–max, included?,
-                   │              labor-only?)
+                   │              labor-only?, eliminated?)
                    │              └─ LineAllocation (room, %)
                    ├─ Commitment (approved QuoteVersion, value)
                    │    ├─ Installment (due date, amount)

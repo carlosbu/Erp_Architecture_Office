@@ -1,5 +1,5 @@
 # ADR-0002 — Money stored as integer cents; estimates as min/max
-Status: proposed · Date: 02/11/2026
+Status: accepted (03/11/2026) · Date: 02/11/2026
 ## Context
 Quotes have exact values and ranges (Todeschini R$ 150–180k); taxes like +12% NF.
 ## Decision

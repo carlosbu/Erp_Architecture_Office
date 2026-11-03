@@ -1,5 +1,5 @@
 # ADR-0003 — Organization → Project model from day one
-Status: proposed · Date: 02/11/2026
+Status: accepted (03/11/2026) · Date: 02/11/2026
 ## Context
 Renovation now; architecture office ERP later.
 ## Decision
