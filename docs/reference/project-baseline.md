@@ -8,6 +8,7 @@ Source documents (owner uploads, not stored in repo):
 - Quote: Noventa Graus Engenharia (civil works), 13/10/2026
 - Estimate: Todeschini Arte Design (joinery), feasibility study
 - Quote: M&M Móveis Planejados (joinery), 14/09/2026
+- Quote: Marcenaria da Fazenda (joinery), revisão 01, 16/10/2026 (photos)
 
 Architect: Carlos Sawaya Bracher Arquitetos Associados — anteprojeto R00, May 2026.
 
@@ -43,7 +44,7 @@ within the same package**; the forecast **adds packages together**.
 | Package | Status |
 |---|---|
 | Obra civil | Noventa Graus v1 received |
-| Marcenaria | Todeschini estimate + M&M quote received (2 competing) |
+| Marcenaria | Todeschini estimate + M&M + Marcenaria da Fazenda (3 competing) |
 | Ar-condicionado | missing |
 | Mármores e granitos | missing |
 | Vidros, box e espelhos | missing |
@@ -167,3 +168,64 @@ completeness check the system must do (B6).
 - Civil Noventa (with NF) R$ 268,7k + Joinery M&M ~R$ 305k = **~R$ 574k** (~15% over).
 - Without NF on civil: ~R$ 545k (~9% over).
 - Still missing: AC, stone, glass/mirrors, fixtures, lighting, heating, cleaning, LED, MC22–26.
+
+### Marcenaria da Fazenda — joinery quote (revisão 01, 16/10/2026)
+Veneer: Curupixá or Tauari. Priced per MC item, doors listed separately.
+| Item | Room (as written by supplier) | Value |
+|---|---|---|
+| MC21 | Cozinha | ELIMINATED |
+| MC01 | Cozinha/sala/churrasqueira | R$ 20.740,70 |
+| MC02 | Cozinha/sala (1 porta abrir, 2 correr, caixa) | R$ 45.779,58 |
+| Doors | 2 portas correr Cozinha/churrasqueira | R$ 31.199,68 |
+| MC04 | Cozinha/área serviço (2 armários, 3 portas correr) | R$ 74.797,10 |
+| MC03 | Churrasqueira | R$ 8.917,88 |
+| MC05 | Hall (banco, aparador, 25 penduradores, 2 espelhos) | R$ 37.457,19 |
+| MC06 | Sala TV (painel L, prateleiras, bancada, 3 armários) | R$ 70.922,80 |
+| Door | Porta abrir Sala TV/circulação | R$ 14.941,91 |
+| Doors | 3 portas correr Sala TV/sala | R$ 59.520,35 |
+| MC07 | Banho serviço | R$ 15.569,95 |
+| MC08 | Escritório | R$ 27.092,87 |
+| MC09 | Escritório | R$ 19.757,12 |
+| Door | Porta abrir Escritório/hall | R$ 11.988,00 |
+| MC10 | Lavabo | R$ 2.662,34 |
+| Door | Porta abrir Lavabo/hall | R$ 11.988,00 |
+| MC11 | Banho suíte 02 | R$ 4.198,30 |
+| MC12 | Banho suíte 03 | R$ 4.198,30 |
+| MC13 | Suíte 02 | R$ 20.871,69 |
+| MC14 | Suíte 03 | R$ 27.828,92 |
+| MC15 | Suíte 02 | R$ 18.533,88 |
+| MC16 | Suíte 02 | R$ 26.721,93 |
+| MC17 | Suíte 03 | R$ 26.421,68 |
+| MC18 | Suíte 01 | R$ 9.188,66 |
+| MC19 | Banho suíte 01 | R$ 6.662,60 |
+| MC20 | Banho suíte 01 | R$ 16.670,32 |
+| MC27 | Painéis hall/sala | R$ 34.287,99 |
+| MC21R–MC26R | Reforma de existentes | after technical visit |
+| **Total** | | **R$ 648.919,71** |
+| Discount | | −R$ 28.919,71 |
+| **Total with discount** | | **R$ 620.000,00** |
+
+- Included: measurement, production, finishing, freight, installation, travel/lodging, normal glass and mirrors, samples, installing client-supplied hardware.
+- Excluded: moisture-resistant MDF, special glass, adjustable shelves, accessories, metal handles, LED/lighting/sockets, Tectus hinges, locks/handles, metal painting, brass items, civil/electrical works, hoisting/scaffolding.
+- Validity: **15 days → expired 31/10/2026**. Delivery and installments: to be agreed.
+- Doors as separate items: **R$ 129.637,94**.
+- Room naming differs from the layout plan (supplier swaps Suíte 2/3 and
+  Banho 2/3) → **the MC code is the reliable key**, not the room name.
+
+### Joinery comparison by MC item (M&M vs. Fazenda)
+| Scope | M&M | Fazenda | Ratio |
+|---|---|---|---|
+| MC01–MC20 | R$ 169.000 | R$ 484.994 | 2,9× |
+| MC27 panels | ~R$ 131k (1.800/m² × ~73 m², estimate) | R$ 34.288 | — |
+| Doors (sliding/hinged) | excluded | R$ 129.638 | — |
+| Total | ~R$ 305k (incomplete) | R$ 620k | 2,0× |
+Largest gaps (Fazenda ÷ M&M): MC08, MC16, MC17 (~5×), MC20 (4,8×), MC06 (3,9×).
+Closest: MC10, MC19 (~1×).
+
+## Updated reading with 3 joinery options (03/11/2026)
+| Scenario | Civil (NF) | Joinery | Total | vs. R$ 500k |
+|---|---|---|---|---|
+| M&M | 268,7k | ~305k + doors (?) | ~574k + doors | +15% or more |
+| Todeschini | 268,7k | 417–500k (7 areas only) | 686–769k + rest | +37% to +54% |
+| Fazenda | 268,7k | 620k | ~889k | +78% |
+Joinery is the decisive decision for staying on budget.
