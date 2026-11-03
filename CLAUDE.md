@@ -23,6 +23,8 @@ Each phase ends with a doc the owner approves before the next starts:
 6. Release → deploy, review, choose next increment
 
 ## Rules for Claude
+- Stack: Next.js 16 (uses `src/proxy.ts`, not middleware), Supabase, Vercel. Read `node_modules/next/dist/docs/` before using Next APIs.
+- Checks before commit: `npm run lint && npm run typecheck && npm test && npm run build`.
 - Never skip a phase or build features not in an approved spec.
 - Explain choices in plain language; the owner is building their first system.
 - Keep changes small; run tests before committing.
