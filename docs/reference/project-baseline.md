@@ -7,6 +7,7 @@ Source documents (owner uploads, not stored in repo):
 - `101-VIVEIRO-AP-DEMO_E_CONSTR-R00.pdf` — demolition/construction plan
 - Quote: Noventa Graus Engenharia (civil works), 13/10/2026
 - Estimate: Todeschini Arte Design (joinery), feasibility study
+- Quote: M&M Móveis Planejados (joinery), 14/09/2026
 
 Architect: Carlos Sawaya Bracher Arquitetos Associados — anteprojeto R00, May 2026.
 
@@ -42,7 +43,7 @@ within the same package**; the forecast **adds packages together**.
 | Package | Status |
 |---|---|
 | Obra civil | Noventa Graus v1 received |
-| Marcenaria | Todeschini estimate received |
+| Marcenaria | Todeschini estimate + M&M quote received (2 competing) |
 | Ar-condicionado | missing |
 | Mármores e granitos | missing |
 | Vidros, box e espelhos | missing |
@@ -103,7 +104,66 @@ seguro de obra, aquecimento, automação, lustres, limpeza final, LED in joinery
 | **Total** | **R$ 417.000** | **R$ 500.000** |
 Delivery 45 working days after executive project.
 
-## First reading vs. budget (R$ 500.000)
+### M&M Móveis Planejados — joinery quote (v1, 14/09/2026)
+Priced **per MC item** of the joinery schedule (matches the architect's codes).
+| Item | Room | Value |
+|---|---|---|
+| MC01 | Cozinha | R$ 12.000 |
+| MC02 | Cozinha/Jantar | R$ 13.000 |
+| MC03 | Churrasqueira | R$ 5.000 |
+| MC04 | Cozinha | R$ 22.000 |
+| MC05 | Estar | R$ 12.000 |
+| MC06 | TV | R$ 18.000 |
+| MC07 | Banho 4 | R$ 7.000 |
+| MC08 | Escritório | R$ 5.300 |
+| MC09 | Escritório | R$ 7.600 |
+| MC10 | Lavabo | R$ 2.600 |
+| MC11 | Banho 3 | R$ 2.600 |
+| MC12 | Banho 2 | R$ 2.600 |
+| MC13 | Suíte 3 | R$ 12.000 |
+| MC14 | Suíte 2 | R$ 13.000 |
+| MC15 | Suíte 2 | R$ 9.000 |
+| MC16 | Suíte 3 | R$ 5.000 |
+| MC17 | Suíte 2 | R$ 5.000 |
+| MC18 | Suíte 1 (a definir) | R$ 5.600 (not in total) |
+| MC19 | Banho 1 | R$ 6.200 |
+| MC20 | Banho 1 | R$ 3.500 |
+| MC21 | Cozinha | R$ 4.500 |
+| MC22–MC26 | Reforma de existentes | not quoted (a definir) |
+| MC27 | Painéis Cozinha/Estar/Circ./TV | R$ 1.800/m² (not in total) |
+| **Partial total** (excl. MC18, MC27) | | **R$ 167.900** |
+
+- MC27 estimate: layout says ~73 m² → **~R$ 131.400** (if 34,5 m × 2,66 m ≈ 92 m² → ~R$ 165.000).
+- Full estimate: 167.900 + 5.600 + ~131.400 ≈ **R$ 305k**.
+- Excluded: LED, mirrors, special wire racks, special sliding systems, special hardware (metal handles).
+- Terms: 40% down + 4× after delivery (PIX/card); 12× → +12%. Delivery 120 days.
+- Material: natural Freijó or Carvalho veneer.
+- Supplier based in Dourado-SP (~250 km): confirm freight and assembly included.
+
+### Joinery comparison (same package)
+Todeschini covers only 7 areas (Cozinha, Gourmet, Living, TV, Escritório,
+Banho casal, Banho conjugado) and **includes** sliding/hidden doors and ceiling
+panels; M&M covers all MC items but **excludes** special sliding systems.
+| Area | Todeschini | M&M |
+|---|---|---|
+| Cozinha (MC01, 02, 04, 21) | 150–180k | 51,5k |
+| Gourmet (MC03) | 6–8k | 5k |
+| Living (MC05) | 115–130k | 12k + panels |
+| TV (MC06) | 65–75k | 18k + panels |
+| Escritório (MC08, 09) | 42–60k | 12,9k |
+| Banho casal (MC19, 20) | 10–12k | 9,7k |
+| Banho conjugado (MC11, 12) | 29–35k | 5,2k |
+| Panels MC27 | inside Living/TV | ~131k |
+| **Same scope** | **417–500k** | **~246k** |
+Not fully apples-to-apples (doors, ceiling, mirror cabinet). Exactly the
+completeness check the system must do (B6).
+
+## First reading vs. budget (R$ 500.000) — before M&M
 - Civil (with NF) + joinery: **R$ 686k – R$ 769k**, i.e. **37%–54% over budget**,
   before AC, stone, glass, fixtures, lighting, appliances, cleaning.
 - This is the core insight the system must surface automatically.
+
+## Updated reading with M&M (03/11/2026)
+- Civil Noventa (with NF) R$ 268,7k + Joinery M&M ~R$ 305k = **~R$ 574k** (~15% over).
+- Without NF on civil: ~R$ 545k (~9% over).
+- Still missing: AC, stone, glass/mirrors, fixtures, lighting, heating, cleaning, LED, MC22–26.
